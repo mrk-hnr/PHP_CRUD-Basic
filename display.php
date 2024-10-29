@@ -5,7 +5,6 @@
         $query = "SELECT * FROM friends;";
 
         $stmt = $PDO -> prepare($query);
-
         $stmt -> execute();
 
         $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
