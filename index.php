@@ -7,7 +7,7 @@
     </head>
     <body>
 
-        <h3>Add Friend</h3>
+        <h3>Add a Friend</h3>
 
         <form action="includes/formhandler_inc.php" method="POST">
             <input type="text" name="firstname" placeholder="First name">
