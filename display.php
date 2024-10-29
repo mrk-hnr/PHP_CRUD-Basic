@@ -1,6 +1,4 @@
 <?php
-
-
     try {
         require_once "includes/dbh_inc.php";
 
@@ -18,8 +16,6 @@
     } catch(PDOException $error) {
        die("Query Failed - " . $error -> getMessage());
     }
-
-
 ?>
 
 <!DOCTYPE html>
