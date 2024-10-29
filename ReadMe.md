@@ -18,7 +18,7 @@ A painfully basic PHP CRUD project. It's a simple web project that allows users 
 - Removing Data
   - PHP syntax the same as when adding a data except the MySQL query to reflect deleting data.
 - Display all data from friends table
-  - Modified the PHP syntax from all three functions (add, edit, delete) to immediately display all without triggering method="POST" from a form tag.
+  - Modified the PHP syntax from all three functions (add, edit, delete from \_inc.php file) to immediately display all without triggering method="POST" from a form tag.
 
 Quickstart MySQL Query:
 
