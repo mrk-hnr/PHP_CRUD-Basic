@@ -12,9 +12,7 @@ A painfully basic PHP CRUD project. It's a simple web project that allows users 
   - mysqli has more security
   - PDO has security AND more flexible
 - Adding Data
-
   - Created PHP that when the input box are filled, it is saved into MySQL when submit is clicked.
-
 - Modifying Data
   - PHP syntax the same as when adding a data except the MySQL query is changed to UPDATE.
 - Removing Data
