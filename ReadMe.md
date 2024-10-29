@@ -29,7 +29,6 @@ CREATE TABLE friends (
     friended_at DATETIME NOT NULL DEFAULT CURRENT_TIME,
     PRIMARY KEY (id)
 );
-
 ```
 
 Quickstart Table Data:
@@ -40,7 +39,6 @@ INSERT INTO friends (firstname, lastname, assoc) VALUES ("Jane", "Doe", "Classma
 INSERT INTO friends (firstname, lastname, assoc) VALUES ("SpongeBob", "SquarePants", "Neighbor");
 INSERT INTO friends (firstname, lastname, assoc) VALUES ("Patrick", "Star", "Neighbor");
 INSERT INTO friends (firstname, lastname, assoc) VALUES ("Squidward", "Tentacles", "Neighbor");
-
 ```
 
 <hr>
