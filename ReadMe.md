@@ -11,7 +11,14 @@ A painfully basic PHP CRUD project. It's a simple web project that allows users 
   - mysql is outdated
   - mysqli has more security
   - PDO has security AND more flexible
-- Created script(?) that when the input box are filled, it is saved into MySQL when submit is clicked.
+- Adding Data
+
+  - Created PHP that when the input box are filled, it is saved into MySQL when submit is clicked.
+
+- Modifying Data
+  - PHP syntax the same as when adding a data except the MySQL query is changed to UPDATE.
+- Removing Data
+  - PHP syntax the same as when adding a data except the MySQL query to reflect deleting data.
 
 Quickstart MySQL Query:
 
