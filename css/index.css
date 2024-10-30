@@ -1,3 +1,10 @@
 #form__friend-add {
   display: none;
 }
+
+#form__friend-edit {
+  display: none;
+}
+#form__friend-delete {
+  display: none;
+}

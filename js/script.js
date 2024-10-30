@@ -2,26 +2,25 @@ let button_addFriend = document.getElementById("button_add-friend");
 let button_editFriend = document.getElementById("button_edit-friend");
 let button_deleteFriend = document.getElementById("button_delete-friend");
 
+let form_addFriend = document.getElementById("form__friend-add");
+let form_editFriend = document.getElementById("form__friend-edit");
+let form_deleteFriend = document.getElementById("form__friend-delete");
+
 button_addFriend.addEventListener("click", () => {
-  toggleForm(button_addFriend);
+  linkToForm(form_addFriend);
 });
 
 button_editFriend.addEventListener("click", () => {
-  toggleForm(button_editFriend);
+  linkToForm(form_editFriend);
 });
 
 button_deleteFriend.addEventListener("click", () => {
-  toggleForm(button_deleteFriend);
+  linkToForm(form_deleteFriend);
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   addbutton.addEventListener("click", function () {
-//     toggleFunction(addbutton);
-//   });
-//   deletebutton.addEventListener("click", function () {
-//     toggleFunction(deletebutton);
-//   });
-// });
+function linkToForm(id) {
+  toggleForm(id);
+}
 
 function toggleForm(id) {
   console.log(id);
