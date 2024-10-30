@@ -19,19 +19,28 @@
         <div id="form__friend-add">
             <form action="includes/formhandler_inc.php" method="POST" class="flex flex-col justify-center">
                 <input type="text" name="firstname" placeholder="First name" class="text-center border-solid mx-auto mt-6 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">    
+               
                 <input type="text" name="lastname" placeholder="Last name" class="text-center border-solid mx-auto mt-1 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">
+               
                 <input type="text" name="assoc" placeholder="Connection status" class="text-center border-solid mx-auto mt-1 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">
 
-                <button id="submit" class="px-4 pb-2 pt-1 bg-stone-800 text-white w-28 mx-auto my-2  rounded-md">Submit</button>
-
+                <button class="px-4 pb-2 pt-1 bg-stone-800 text-white w-28 mx-auto my-2  rounded-md">Submit</button>
             </form>
         </div>
-        
 
-        <form action="" id="form__friend-edit">
-            <h2>Edit Friend</h2>
-        </form>
-        <form action="" id="form__friend-delete">
+        <div id="form__friend-edit">
+            <form action="includes/friendupdate_inc.php" method="POST" class="flex flex-col justify-center">
+                <input type="text" name="firstname" placeholder="First name" class="text-center border-solid mx-auto mt-6 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">
+  
+                <input type="text" name="lastname" placeholder="Last name" class="text-center border-solid mx-auto mt-1 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">
+                    
+                <input type="text" name="assoc" placeholder="Connection status" class="text-center border-solid mx-auto mt-1 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">
+
+                <button class="px-4 pb-2 pt-1 bg-stone-800 text-white w-28 mx-auto my-2  rounded-md">Submit</button>
+            </form>
+        </div>        
+
+        <form action="">
             <h2>Delete Friend</h2>
         </form>
 
