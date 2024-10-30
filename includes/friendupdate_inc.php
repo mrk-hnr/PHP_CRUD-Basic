@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         require_once "dbh_inc.php";
 
-        $query = "UPDATE friends SET firstname = :firstname, lastname = :lastname, assoc = :assoc WHERE id = 2;";
+        $query = "UPDATE friends SET firstname = :firstname, lastname = :lastname, assoc = :assoc WHERE id = 12;";
 
         // id is hardcoded for this project. Have not learned how to implement dynamic id yet
 

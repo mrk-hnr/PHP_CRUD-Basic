@@ -32,10 +32,20 @@
         echo "<p>You don't have a friend!</p>";
         echo "</div>";
     } else {
+        echo "<div class='flex justify-around text-xl'>";
+        echo "<h2>First Name</h2>";
+        echo "<h2>Last Name</h2>";
+        echo "<h2>Connection</h2>";
+        echo "</div>";
+
+        
+        
         foreach ($result as $row) {
-            echo "{$row['firstname']} {$row['lastname']} - {$row['assoc']}";
-            echo "<br>";            
+            echo "<div class='flex justify-around text-sm gap-* text-center items-center'> <p class='text-center my-auto py-2 w-20'>{$row['firstname']}</p>";
+            echo "<p class='w-20'>{$row['lastname']}</p>";
+            echo "<p class='w-20'>{$row['assoc']}</p> </div>";      
         }
+        
     }
     ?>
 
