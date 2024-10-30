@@ -38,11 +38,20 @@
 
                 <button class="px-4 pb-2 pt-1 bg-stone-800 text-white w-28 mx-auto my-2  rounded-md">Submit</button>
             </form>
-        </div>        
+        </div>
 
-        <form action="">
-            <h2>Delete Friend</h2>
+        <div id="form__friend-delete">
+        <form action="includes/frienddelete_inc.php" method="POST" class="flex flex-col justify-center">
+            <input type="text" name="firstname" placeholder="First name" class="text-center border-solid mx-auto mt-6 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">        
+            <input type="text" name="lastname" placeholder="Last name" class="text-center border-solid mx-auto mt-1 p-1 rounded-md text-stone-800 w-96 bg-gray-200 placeholder-gray-500 border border-solid border-stone-400">
+            <button class="px-4 pb-2 pt-1 bg-stone-800 text-white w-28 mx-auto my-2  rounded-md">Submit</button>
         </form>
+        </div>
+        
+
+        <?php
+            require_once "display.php";
+        ?>
 
     </main>
 
