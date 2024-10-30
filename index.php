@@ -3,60 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    
     <title>Friend's List Tracker</title>
 </head>
 <body>
+    <main>
+        <div class="flex justify-around pt-40">
+        <button id="button_add-friend" class="p-4 rounded-md bg-stone-800 text-white w-48 text-base hover:text-stone-800 hover:bg-gray-200 transition-all ease-in hover:border-gray-700 border-transparent border-2 border-solid">Add a Friend</button>
+        <button id="button_edit-friend"  class="p-4 rounded-md bg-stone-800 text-white w-48 text-base hover:text-stone-800 hover:bg-gray-200 transition-all ease-in hover:border-gray-700 border-transparent border-2 border-solid">Modify Friend Details</button>
+        <button id="button_delete-friend" class="p-4 rounded-md bg-stone-800 text-white w-48 text-base hover:text-stone-800 hover:bg-gray-200 transition-all ease-in hover:border-gray-700 border-transparent border-2 border-solid">Remove a Friend</button>
+        </div>
 
-    <h3>Add a Friend</h3>
+        <form action="" id="form__friend-add">
+            <h2>Add Friend</h2>
+        </form>
 
-    <form action="includes/formhandler_inc.php" method="POST">
-        <input type="text" name="firstname" placeholder="First name">
-        <br>
-            
-        <input type="text" name="lastname" placeholder="Last name">
-        <br>
-            
-        <input type="text" name="assoc" placeholder="Connection status">
-        <br>
+        <form action="" id="form__friend-edit">
+            <h2>Edit Friend</h2>
+        </form>
+        <form action="" id="form__friend-delete">
+            <h2>Delete Friend</h2>
+        </form>
 
-        <button>Submit</button>
-    </form>
+    </main>
 
-     <hr>
-
-    <h3>Modify Friend Details</h3>
-
-    <form action="includes/friendupdate_inc.php" method="POST">
-        <input type="text" name="firstname" placeholder="First name">
-        <br>
-            
-        <input type="text" name="lastname" placeholder="Last name">
-        <br>
-            
-        <input type="text" name="assoc" placeholder="Connection status">
-        <br>
-
-        <button>Submit</button>
-    </form>
-
-    <hr>
-
-    <h3>Remove a Friend</h3>
-
-    <form action="includes/frienddelete_inc.php" method="POST">
-        <input type="text" name="firstname" placeholder="First name">
-        <br>
-            
-        <input type="text" name="lastname" placeholder="Last name">
-        <br>
-        
-        <button>Submit</button>
-    </form>
-    <hr>
-    
-    <h3>Friend List</h3>
-    <?php
-        require_once "display.php";
-    ?>
+    <?php echo "<script src='./js/script.js'></script>" ?>
 </body>
 </html>
